@@ -11,6 +11,8 @@ import android.os.*
 import android.util.Log
 import android.util.Size
 import android.view.*
+import android.os.Build
+import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -166,6 +168,11 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+    window.attributes.layoutInDisplayCutoutMode =
+        WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+}
+        
         // 绑定视图
         surfaceView = findViewById(R.id.surfaceView)
         tvFps = findViewById(R.id.tvFps)
