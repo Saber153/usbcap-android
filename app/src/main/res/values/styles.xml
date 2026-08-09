@@ -10,7 +10,6 @@
     <style name="Theme.USBCap.Fullscreen" parent="Theme.USBCap">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowLayoutInDisplayCutout" tools:targetApi="28">shortEdges</item>
         <item name="android:windowBackground">@android:color/black</item>
     </style>
 </resources>
