@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+    <!-- 常见USB采集卡 VID/PID -->
+    <!-- Fushicai / EasyCAP -->
+    <usb-device vendor-id="3047" product-id="4102" />
+    <usb-device vendor-id="3047" product-id="4103" />
+    <!-- Magewell -->
+    <usb-device vendor-id="3042" product-id="2005" />
+    <usb-device vendor-id="3042" product-id="2006" />
+    <!-- AverMedia -->
+    <usb-device vendor-id="2055" product-id="1310" />
+    <usb-device vendor-id="2055" product-id="1320" />
+    <!-- Genki / Generic UVC -->
+    <usb-device vendor-id="1133" product-id="2065" />
+    <usb-device vendor-id="1133" product-id="2068" />
+    <!-- Elgato -->
+    <usb-device vendor-id="10730" product-id="1862" />
+    <usb-device vendor-id="10730" product-id="1863" />
+    <!-- 匹配所有UVC设备 class=239 subclass=2 -->
+    <usb-device class="239" subclass="2" />
+</devices>
